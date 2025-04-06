@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source ~/whisper-env/bin/activate
 
 echo "Enter your source path (<username>\...):"
 read src_dir
@@ -18,3 +19,5 @@ read dst_dir
 
 
 whisper "/mnt/c/$src_dir" --language $language --model $model --output_format $dst_format --output_dir "/mnt/c/$dst_dir"
+
+deactivate
