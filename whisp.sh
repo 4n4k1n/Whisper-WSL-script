@@ -18,6 +18,6 @@ echo "Enter the output directory (<username>\...):"
 read dst_dir
 
 
-whisper "/mnt/c/Users/$src_dir" --language $language --model $model --output_format $dst_format --output_dir "/mnt/c/Users/$dst_dir"
+whisper "/mnt/c/Users/$src_dir" --language "$language" --model "$model" --output_format "$dst_format" --output_dir "/mnt/c/Users/$dst_dir"
 
 deactivate
